@@ -1,7 +1,8 @@
 {
-  "livePreview": false,
+  "livePreview": true,
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "trashOption": "none",
-  "uriCallbacks": true
+  "uriCallbacks": true,
+  "propertiesInDocument": "source"
 }
