@@ -1,0 +1,19 @@
+{
+  "tft-cornell@@cornell-cue-column-width": 330,
+  "tft-cornell@@cornell-cue-column-width-readable-line": 330,
+  "tft-cornell@@cornell-cue-callout-width": 330,
+  "tft-cornell@@cornell-cue-callout-width-readable-line": 330,
+  "tft-cornell@@cornell-summary-callout-max-height": 200,
+  "tft-cornell@@cornell-summary-callout-top-height": 300,
+  "tft-cornell@@cornell-summary-callout-background-color@@dark": "#05042E",
+  "tft-cornell@@cornell-border-padding": 10,
+  "minimal-style@@h5-variant": "normal",
+  "minimal-style@@h6-variant": "normal",
+  "minimal-style@@h1-color@@dark": "#FF4A85",
+  "minimal-style@@h2-color@@dark": "#D946EF",
+  "minimal-style@@h3-color@@dark": "#A855F7",
+  "minimal-style@@h4-color@@dark": "#818CF8",
+  "minimal-style@@h5-color@@dark": "#3B82F6",
+  "minimal-style@@h6-color@@dark": "#06B6D4",
+  "minimal-style@@tag-color@@dark": "#7BDEFF"
+}

@@ -1,0 +1,110 @@
+:root {
+    --cue-line: 2px solid lightgrey;
+}
+
+
+.markdown-preview-view.cornell-note .markdown-preview-sizer,
+.markdown-source-view.cornell-note .markdown-preview-sizer {
+    max-width: var(--file-line-width);
+    margin-left: auto;
+    margin-right: auto;
+    margin-inline: 110px;
+    width: 100%;
+}
+
+/* Remove border for .mod-header */
+.markdown-preview-view.cornell-note .markdown-preview-sizer > div.mod-header {
+	border-left: none;
+}
+
+.markdown-preview-view.cornell-note .markdown-preview-sizer > div ,
+.markdown-source-view.cornell-note .markdown-preview-sizer > div {
+    width: 70%;
+    margin-inline: auto;
+}
+
+.markdown-preview-view.cornell-note .markdown-preview-sizer > div:has(p, ul, ol, pre),
+.markdown-source-view.cornell-note .markdown-preview-sizer > div:has(p, ul, ol, pre)  {
+    border-left: none;
+    padding-left: 0;
+}
+
+.markdown-preview-view.cornell-note aside:first-line, 
+.markdown-source-view.cornell-note aside:first-line {
+    font-weight: 700;
+}
+
+.markdown-preview-view.cornell-note .callout[data-callout="ccue"],
+.markdown-preview-view.cornell-note .callout[data-callout="cex"],
+.markdown-preview-view.cornell-note .callout[data-callout="cdef"],
+.markdown-preview-view.cornell-note .callout[data-callout="ctheo"] {
+	position: absolute;
+    margin-right: 10px;
+    padding: 8px;
+    left: 10px;
+    width: calc((100% - var(--file-line-width))/1.42 - 18px); /* -14px = -10px (left) -8x (padding) */
+	min-width: 150px;
+	min-height: 20px;       /* Minimum height for very short content */
+	max-height: 200px;       /* Maximum height before scrolling */
+	overflow-y: auto;       /* Enable scrolling */
+	margin-bottom: 2em;     /* Space between callouts */
+	clear: both;           
+	margin: 3px;            
+	height: fit-content;    /* Grow with content until max-height */
+}
+
+.markdown-preview-view.cornell-note .callout[data-callout="ccue"] .callout-icon,
+.markdown-preview-view.cornell-note .callout[data-callout="cex"] .callout-icon,
+.markdown-preview-view.cornell-note .callout[data-callout="cdef"] .callout-icon,
+.markdown-preview-view.cornell-note .callout[data-callout="ctheo"] .callout-icon,
+.markdown-preview-view.cornell-note .callout[data-callout="csum"] .callout-icon {
+   display: none;         /* Remove all callout icons */
+}
+
+/* Enforce spacing between paragraphs */
+.markdown-preview-view.cornell-note p {
+   margin-bottom: 1em;    /* Force space between paragraphs */
+   min-height: 3em;       /* Minimum space for paragraph content */
+}
+
+/*  --------------  Callout Colors -------------- */
+
+.markdown-source-view.cornell-note .callout[data-callout="cex"],
+.markdown-preview-view.cornell-note .callout[data-callout="cex"] {
+   --callout-color: 153, 232, 152;
+}
+
+.markdown-source-view.cornell-note .callout[data-callout="cdef"],
+.markdown-preview-view.cornell-note .callout[data-callout="cdef"] {
+   --callout-color: 148, 184, 241;
+}
+
+.markdown-source-view.cornell-note .callout[data-callout="ctheo"],
+.markdown-preview-view.cornell-note .callout[data-callout="ctheo"] {
+   --callout-color: 224, 172, 0;
+}
+
+.markdown-source-view.cornell-note .callout[data-callout="summary"],
+.markdown-preview-view.cornell-note .callout[data-callout="summary"] {
+   --callout-color: 221, 168, 221;
+}
+
+/*  --------------  Callout Colors -------------- */
+
+.markdown-preview-view.cornell-note .markdown-preview-sizer,
+.markdown-source-view.cornell-note .markdown-preview-sizer {
+    max-width: var(--file-line-width);
+    margin-left: auto;
+    margin-right: auto;
+    margin-inline: auto;
+    width: 100%;
+}
+
+.markdown-preview-view.cornell-note .callout[data-callout="summary"] {
+   position: absolute;
+   padding: 1rem;
+   left: 10px;
+   width: calc((100% - var(--file-line-width))/2 + var(--file-line-width)); 
+   margin-top: 2rem;
+	text-align: justify;
+}

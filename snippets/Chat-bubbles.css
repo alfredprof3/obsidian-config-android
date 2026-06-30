@@ -1,0 +1,125 @@
+/* ================================================
+   Chat Bubbles for Obsidian
+   by Alfredo + Claude
+   ================================================
+
+   USAGE — write conversations like this:
+
+   > [!human] You
+   > Your message here.
+
+   > [!ai] Claude
+   > The AI response here.
+
+   You can use any AI name after [!ai]:
+   > [!ai] ChatGPT
+   > [!ai] Gemini
+
+   INSTALL:
+   1. Copy this file to: YourVault/.obsidian/snippets/
+   2. In Obsidian: Settings → Appearance → CSS Snippets
+   3. Toggle "chat-bubbles" ON
+   4. Switch to Reading View to see the bubbles
+   ================================================ */
+
+
+/* ---- Reset default Obsidian callout styling ---- */
+
+.callout[data-callout="human"],
+.callout[data-callout="ai"] {
+    background:  transparent !important;
+    border:      none !important;
+    box-shadow:  none !important;
+    padding:     0 !important;
+    margin:      8px 0 !important;
+    display:     flex;
+    flex-direction: column;
+}
+
+
+/* ---- Sender name label (shown above each bubble) ---- */
+
+.callout[data-callout="human"] .callout-title,
+.callout[data-callout="ai"] .callout-title {
+    background:  transparent !important;
+    border:      none !important;
+    padding:     0 6px 3px 6px !important;
+    font-size:   11px !important;
+    font-weight: 600 !important;
+    color:       var(--text-muted) !important;
+    gap:         0 !important;
+}
+
+/* Hide the default callout icon (the emoji/symbol) */
+.callout[data-callout="human"] .callout-icon,
+.callout[data-callout="ai"]    .callout-icon {
+    display: none !important;
+}
+
+
+/* ---- Shared bubble shape ---- */
+
+.callout[data-callout="human"] .callout-content,
+.callout[data-callout="ai"]    .callout-content {
+    max-width:     75% !important;
+    padding:       13px 18px !important;
+    border-radius: 18px !important;
+    line-height:   1.5 !important;
+    font-size:     14px !important;
+    margin:        0 !important;
+}
+
+/* Remove extra spacing inside paragraphs within bubbles */
+.callout[data-callout="human"] .callout-content p,
+.callout[data-callout="ai"]    .callout-content p {
+    margin: 0 0 6px 0 !important;
+}
+
+.callout[data-callout="human"] .callout-content p:last-child,
+.callout[data-callout="ai"]    .callout-content p:last-child {
+    margin-bottom: 0 !important;
+}
+
+
+/* ---- YOUR messages: right side, accent color ---- */
+
+.callout[data-callout="human"] {
+    align-items: flex-end;
+}
+
+.callout[data-callout="human"] .callout-title {
+    text-align: right !important;
+}
+
+.callout[data-callout="human"] .callout-content {
+    background-color:    #004995 !important;
+    color:               var(--text-on-accent) !important;
+    border-bottom-right-radius: 4px !important;   /* the WhatsApp "tail" shape */
+}
+
+
+/* ---- AI messages: left side, secondary background ---- */
+
+.callout[data-callout="ai"] {
+    align-items: flex-start;
+}
+
+.callout[data-callout="ai"] .callout-content {
+    background-color:   #242626 !important;
+    color:              var(--text-normal) !important;
+    border-left:        0px solid #4caf50 !important;
+    border-bottom-left-radius: 2px !important;    /* the WhatsApp "tail" shape */
+}
+
+
+/* ---- CUSTOMIZATION ----
+   To change bubble colors, replace the values below.
+   Example: change your bubble from accent to green:
+
+   .callout[data-callout="human"] .callout-content {
+       background-color: #0C9D65 !important;
+   }
+
+   To make bubbles wider (default is 75% of the panel):
+   change max-width: 75% to max-width: 85%
+   ======================== */

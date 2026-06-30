@@ -1,0 +1,33 @@
+# 1. Ignore everything by default
+*
+
+# 2.  Completely block the .obsidian folder first
+.obsidian/
+
+# 3. Allow Git to scan into directories
+!*/
+
+# 4. CRITICAL: Do NOT ignore the gitignore file itself
+!.gitignore
+
+# 5. Un-ignore your required root configuration files
+!app.json
+!appearance.json
+!community-plugins.json
+!core-plugins.json
+!hotkeys.json
+!README.md
+
+# 6. Un-ignore required directories and all their contents
+!snippets/**
+!themes/**
+
+# 7. Allow the plugins directory contents...
+!plugins/**
+
+# 8. ...BUT explicitly ignore these specific items inside plugins
+plugins/remotely-save/
+plugins/obsidian-git/
+
+# 9. Explicitly ignore workspace.json
+workspace.json
