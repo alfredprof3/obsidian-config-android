@@ -18,6 +18,26 @@
     "Timeline - harr",
     "Timeline FireIsGood",
     "Outlined-Callout-Claude",
-    "Steps-Timeline-Claude"
-  ]
+    "Steps-Timeline-Claude",
+    "Author-Callout",
+    "Canvas-Candy",
+    "Cornell-Notes-TfTHacker",
+    "Dashboard",
+    "Dashboard-ReadLineLength",
+    "Fade-Emoji-Tasks",
+    "Folder-Structure-Callout",
+    "Hide-Property-CSSClasses",
+    "Label-Callout",
+    "MCL-Gallery-Cards",
+    "MCL-Multi-Column",
+    "MCL-Wide-Views",
+    "Outlined-Callout",
+    "Sidenote-Auto-Adjust-Module",
+    "Sidenote-Tufte-Style-Sidenote-Auto-Adjust-Module",
+    "Steps-Timeline",
+    "Stickynote-Callout-Style-Sidenote-Auto-Adjust-Module",
+    "Timeline-FireIsGood",
+    "Timeline-harr"
+  ],
+  "theme": "obsidian"
 }
