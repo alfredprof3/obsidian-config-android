@@ -1,33 +1,33 @@
 # 1. Ignore everything by default
 *
 
-# 2.  Completely block the .obsidian folder first
-.obsidian/
-
-# 3. Allow Git to scan into directories
+# 2. Allow Git to traverse directories to find un-ignored files
 !*/
 
-# 4. CRITICAL: Do NOT ignore the gitignore file itself
+# 3. CRITICAL: Track the gitignore file itself
 !.gitignore
 
-# 5. Un-ignore your required root configuration files
+# 4. Un-ignore core configuration files. Note: We are keeping app.json and appearance.json synced so you MacBooks match. If you want different themes on your tablet, remove !appearance.json
 !app.json
 !appearance.json
 !community-plugins.json
 !core-plugins.json
 !hotkeys.json
-!README.md
 
-# 6. Un-ignore required directories and all their contents
+# 5. Un-ignore required asset directories
 !snippets/**
 !themes/**
 
-# 7. Allow the plugins directory contents...
+# 6. Un-ignore the plugins directory...
 !plugins/**
 
-# 8. ...BUT explicitly ignore these specific items inside plugins
+# 7. ...BUT block specific plugins containing sensitive tokens or local states
 plugins/remotely-save/
 plugins/obsidian-git/
 
-# 9. Explicitly ignore workspace.json
+# 8. EXPLICITY IGNORE UI AND CACHE FILES. Even though the * at the top ignores them, explicitly listing them ensures the are never accidentally tracked if you change rules later
 workspace.json
+workspace-mobile.json
+graph.json
+cache/
+**/.DS_Store
