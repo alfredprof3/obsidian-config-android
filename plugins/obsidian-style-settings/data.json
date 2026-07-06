@@ -15,5 +15,8 @@
   "minimal-style@@h4-color@@dark": "#818CF8",
   "minimal-style@@h5-color@@dark": "#3B82F6",
   "minimal-style@@h6-color@@dark": "#06B6D4",
-  "minimal-style@@tag-color@@dark": "#7BDEFF"
+  "minimal-style@@tag-color@@dark": "#7BDEFF",
+  "minimal-style@@tag-border-width": "2px",
+  "minimal-style@@code-normal@@dark": "#03C56C",
+  "minimal-style@@bold-modifier": 300
 }
