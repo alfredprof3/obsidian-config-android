@@ -4,5 +4,6 @@
   "showUnsupportedFiles": true,
   "trashOption": "none",
   "uriCallbacks": true,
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "source",
+  "showIndentGuide": false
 }
